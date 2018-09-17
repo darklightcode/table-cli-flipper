@@ -1,5 +1,5 @@
 # Table CLI Flipper
-![Table CLI Flipper](https://raw.githubusercontent.com/darklightcode/table-cli-flipper/master/psd/icon-small.png)
+![Table CLI Flipper](https://raw.githubusercontent.com/darklightcode/table-cli-flipper/master/psd/icon-small-table.png)
 
 A simple cyan colored table for your data that allows you to format columns and flip your data.
 
@@ -160,22 +160,4 @@ simpleTable.output(); //
 // let output = simpleTable.output(true);
 // let output = simpleTable.output(true, true);
 
-```
-
-**Output:**
-```
-Mock Server started on port 3010
-Mock Server started on port 4500
-Mock Server started on port 9921
-Free ports: [ 2018, 3010, 4500, 9921, 3985, 5890, 15367, 19661, 22715, 36543 ]
-Status available: 2018 0.0.0.0 true
-Status unavailable: 3010 0.0.0.0 false
-Status unavailable: 4500 0.0.0.0 false
-Status unavailable: 9921 0.0.0.0 false
-Status available: 3985 0.0.0.0 true
-Status available: 5890 0.0.0.0 true
-Status available: 15367 0.0.0.0 true
-Status available: 19661 0.0.0.0 true
-Status available: 22715 0.0.0.0 true
-Status available: 36543 0.0.0.0 true
 ```
