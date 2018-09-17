@@ -1,5 +1,5 @@
 # Table CLI Flipper
-![Table CLI Flipper](https://raw.githubusercontent.com/darklightcode/table-cli-flipper/master/psd/icon.png | width=100)
+![Table CLI Flipper](https://raw.githubusercontent.com/darklightcode/table-cli-flipper/master/psd/icon.png =250x250)
 A simple cyan colored table for your data that allows you to format columns and flip your data.
 
 ```
