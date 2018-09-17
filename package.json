@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/darklightcode/table-cli-flipper#readme",
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.1"
   },
   "devDependencies": {
     "@types/node": "^10.9.4",
