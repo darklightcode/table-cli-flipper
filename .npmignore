@@ -3,6 +3,7 @@
 /.tmp
 /tmp
 /readme
+/readme/*
 /test
 /src
 /psd
