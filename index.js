@@ -1,46 +1,7 @@
-# Table CLI Flipper
-![Table CLI Flipper](https://raw.githubusercontent.com/darklightcode/table-cli-flipper/master/psd/icon.png)
-A simple cyan colored table for your data that allows you to format columns and flip your data.
-
-```
-npm install table-cli-flipper --save
-```
-
-# Update
-
-1.0.1 :
-----------------
-- You can show/hide header/columns
-- Format columns/rows as you consider. (Breaking lines can be done by using '\n', '\r', '\r\n' in your texts, or by returning an array of strings [ string1, string2, ... , stringN])
-- WrapWrap texts
-- Flip table to the left
-- Read the example below for usage and additional information. 'exampleConfig' contains global and user options.
-
-2.0.0 :
-----------------
-- As of 2.0 this package has been rewritten to use Promises.
-- These 3 promises are all there is to it: getFreePorts, isFreePort, nextAvailable .
-- Let {getFreePorts, isFreePort, nextAvailable} = require('node-port-check');
-- Read the examples below to see how to use them.
-
-
-
-
-
-### Example - Table Normal
-![Table Normal](https://raw.githubusercontent.com/darklightcode/table-cli-flipper/master/psd/table-normal.png)
-
-### Example - Table Flipped
-![Table Flipped](https://raw.githubusercontent.com/darklightcode/table-cli-flipper/master/psd/table-flipped.png)
-
-### Usage Example
-
-```javascript
-
 process.stdout.write('\033c');
 console.log('\033c');
 
-let table = require('table-cli-flipper');
+let table = require('./lib');
 
 let data = {};
 
@@ -168,23 +129,3 @@ simpleTable.output(); //
  */
 // let output = simpleTable.output(true);
 // let output = simpleTable.output(true, true);
-
-```
-
-**Output:**
-```
-Mock Server started on port 3010
-Mock Server started on port 4500
-Mock Server started on port 9921
-Free ports: [ 2018, 3010, 4500, 9921, 3985, 5890, 15367, 19661, 22715, 36543 ]
-Status available: 2018 0.0.0.0 true
-Status unavailable: 3010 0.0.0.0 false
-Status unavailable: 4500 0.0.0.0 false
-Status unavailable: 9921 0.0.0.0 false
-Status available: 3985 0.0.0.0 true
-Status available: 5890 0.0.0.0 true
-Status available: 15367 0.0.0.0 true
-Status available: 19661 0.0.0.0 true
-Status available: 22715 0.0.0.0 true
-Status available: 36543 0.0.0.0 true
-```

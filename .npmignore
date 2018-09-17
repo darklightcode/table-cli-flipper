@@ -1,0 +1,12 @@
+/static
+/.idea
+/.tmp
+/tmp
+/readme
+/test
+/src
+/psd
+/nodemon.json
+/nodemon.normal.json
+/index.js
+/todo.txt

@@ -1,0 +1,41 @@
+{
+  "name": "table-cli-flipper",
+  "version": "1.0.0",
+  "description": "A simple cyan colored table for your data that allows you to format columns and flip your data.",
+  "main": "lib/index",
+  "typings": "definitions/index",
+  "typescript": {
+    "definition": "definitions/index"
+  },
+  "scripts": {
+    "test": "mocha",
+    "tsc:watch": "tsc --watch",
+    "generate:readme": "node ./readme/index.js",
+    "deployDev": "tsc --listEmittedFiles && npm run test && npm run generate:readme && git add -A && git commit -a -m \"deploy tsc build\" && npm version patch && git pull --progress -v --no-rebase \"origin\" && git push --tags --progress \"origin\" master:master",
+    "test-table-flip": "nodemon",
+    "test-table-normal": "nodemon --config nodemon.normal.json"
+  },
+  "keywords": [
+    "table",
+    "simple table",
+    "table flip",
+    "node table"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darklightcode/table-cli-flipper.git"
+  },
+  "author": "darklightcode <https://github.com/darklightcode> (https://github.com/darklightcode)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darklightcode/table-cli-flipper/issues"
+  },
+  "homepage": "https://github.com/darklightcode/table-cli-flipper#readme",
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "chalk": "^2.4.1",
+    "mocha": "^5.2.0",
+    "semver": "^5.5.1",
+    "typescript": "^3.0.3"
+  }
+}
