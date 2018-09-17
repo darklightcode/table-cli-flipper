@@ -1,6 +1,6 @@
 {
   "name": "table-cli-flipper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple cyan colored table for your data that allows you to format columns and flip your data.",
   "main": "lib/index",
   "typings": "definitions/index",
